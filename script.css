@@ -1,54 +1,22 @@
     code,
     pre {
-        font-family: Consolas, 'Lucida Console', 'Courier New', Courier, monospace;
-        font-size: 15px;
-        line-height: 16px;
-        white-space: pre-wrap;
-    }
-
-    code.prettyprint,
-    pre.prettyprint {
-        background-color: #13052e;
-        border-radius: 8px;
-    }
-
-
-    code.prettyprint,
-    pre.prettyprint {
-        background-color: #13052e;
-        border-radius: 8px;
-        width: 100%;
-    }
-
-    pre.prettyprint {
-        padding: 8px 0px 0px 18px;
-        position: relative;
-        background: #13052e;
-        display: block;
-        direction: ltr;
-        unicode-bidi: bidi-override;
-        color: #fff;
-        word-break: normal;
-        border: none;
-        border-left: 10px solid #F9BC00;
-        width: 100%;
+         font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
         line-height: 16px;
     }
-
     pre code,
     pre .line-number {
         color: #fff;
         display: block;
     }
 
-    pre .line-number {
-        counter-increment: linecounter;
-        float: left;
-        margin: 0 2em 0 -1em;
-        border-right: 1px solid;
-        text-align: right;
-        line-height: 16px;
-    }
+pre .line-number {
+    counter-increment: linecounter;
+    float: left;
+    margin: 0 1em 0 -1em;
+    border-right: 1px solid red;
+    text-align: right;
+    line-height: 16px;
+}
 
     pre .line-number span {
         display: block;
