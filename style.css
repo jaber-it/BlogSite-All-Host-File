@@ -52,15 +52,9 @@
      margin: 0 -5px -2em -5px;
  }
 
- code,
- pre {
-     font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
-     line-height: 16px;
-     white-space: pre-wrap;
-     font-size: 15px;
- }
-
  pre.prettyprint {
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  font-size: 15px;
      background-color: #13052e;
      width: auto;
      width: 650px !ie7;
