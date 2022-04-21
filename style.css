@@ -7,7 +7,7 @@
  pre .line-number {
      counter-increment: linecounter;
      float: left;
-     margin: 0 2em 0 -1em;
+     margin: 0 1em 0 -1em;
      border-right: 1px solid red;
      text-align: right;
      line-height: 16px;
@@ -59,7 +59,7 @@
      width: auto;
      width: 650px !ie7;
      margin: 0.5em auto;
-     padding: 15px;
+     padding: 10px;
      padding-bottom: 20px !ie7;
      display: block;
      direction: ltr;
@@ -81,7 +81,7 @@
      background: #f9e8e8;
      border-radius: 15px;
      box-shadow: rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px;
-     padding: 8px 5px 1px 10px;
+     padding: 2px 8px 2px 10px;
      margin-bottom: 10px;
      width: 100%;
  }
@@ -90,7 +90,6 @@
      cursor: pointer;
      /* border-color: #f9e9e9; 
     border: 2px solid #e12929; */
-     border-radius: 6px;
      padding: 8px 10px 6px 10px;
      position: absolute;
      /* align-items: center; */
