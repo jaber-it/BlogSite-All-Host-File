@@ -3,8 +3,8 @@ BlogSite-Host-File
 
 Pre Code Css, Font color, And Script Url This Folder. </b?
 
-<script src='https://github.com/jABER-IT/BlogSite-All-Host-File/blob/3ea99c8037c13dbe44a37d70f52d519e364dd3da/run_prettify.js?lang=css&amp;skin=sunburst'></script>
-<link href='https://github.com/jABER-IT/BlogSite-All-Host-File/blob/3ea99c8037c13dbe44a37d70f52d519e364dd3da/style.css' rel='stylesheet'/> 
+<script src='https://cdn.jsdelivr.net/gh/jABER-IT/Html-CSS-JS-Host-File-Folder/Copy_To_Clipboard_Complete_Code/run_prettify.js?lang=css&amp;skin=sunburst'></script>
+<link href='https://cdn.jsdelivr.net/gh/jABER-IT/Html-CSS-JS-Host-File-Folder/Copy_To_Clipboard_Complete_Code/new31.style.css' rel='stylesheet'/> 
 
 <div class="K2_CBox">
     <pre class="prettyprint lang-scm highlight"><code><xmp><!DOCTYPE html>
@@ -66,4 +66,7 @@ Pre Code Css, Font color, And Script Url This Folder. </b?
 </html> </xmp></code></pre>
     <div class="lNotf" id="LefttNotif"></div>
 </div>
-<script src='https://github.com/jABER-IT/BlogSite-All-Host-File/blob/3ea99c8037c13dbe44a37d70f52d519e364dd3da/script.js'></script>
+ <script src='https://cdn.jsdelivr.net/gh/jABER-IT/Html-CSS-JS-Host-File-Folder/Copy_To_Clipboard_Complete_Code/1.script.js'></script>
+ 
+ <b> New Style UI Degine Pre And Code Tag </br>
+ Use For U.............</b>
