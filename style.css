@@ -219,7 +219,7 @@ code, pre {
      position: relative;
  }
 
- .K2_CBox .C_box_main {
+  #post-body .C_box_main {
      cursor: pointer;
      /* border-color: #f9e9e9; 
     border: 2px solid #e12929; */
