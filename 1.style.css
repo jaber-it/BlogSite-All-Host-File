@@ -213,13 +213,19 @@ code, pre {
      position: relative;
      white-space: pre-wrap
  }
-
-
  .K2_CBox {
      position: relative;
+     background: #f0c6c6;
+     border-radius: 15px;
+     box-shadow: rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px;
+     padding: 2px 8px 2px 10px;
+     margin-bottom: 10px;
+     width: -webkit-fill-available;
  }
 
-  #post-body .C_box_main {
+
+
+  .K2_CBox .C_box_main {
      cursor: pointer;
      /* border-color: #f9e9e9; 
     border: 2px solid #e12929; */
