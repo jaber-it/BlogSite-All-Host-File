@@ -149,7 +149,7 @@ pre code,
 
  pre .line-number span {
      display: block;
-     padding: 0 .5em 0 6em;
+     padding: 0 .5em 0 .6em;
      line-height: 16px;
  }
 
@@ -223,9 +223,10 @@ code, pre {
      cursor: pointer;
      /* border-color: #f9e9e9; 
     border: 2px solid #e12929; */
-     padding: 8px 10px 6px 10px;
+     padding: 6px 8px 4px 8px;
      position: absolute;
-     /* align-items: center; */
+     /* align-items: center;
+	  margin: 5px; */
      /* padding: 12px; */
      outline: 0;
      /* border: 0; */
@@ -234,9 +235,9 @@ code, pre {
      transition: all .3s ease;
      -webkit-transition: all .3s ease;
      z-index: 1;
-     right: 20px;
+     right: 10px;
      top: 0px;
-     margin: 5px;
+
      transition: .1s;
  }
 
