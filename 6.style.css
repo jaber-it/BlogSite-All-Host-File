@@ -248,6 +248,8 @@ code, pre {
     -webkit-transition: all .3s ease;
     z-index: 1;
     transition: .1s;
+    right: 20px;
+    background: #004cbd;
 }
 
  .C_box_main:hover {
