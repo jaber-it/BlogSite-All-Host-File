@@ -240,6 +240,15 @@ code, pre {
 
      transition: .1s;
  }
+.C_box_main {
+    padding: 6px 8px 4px 8px;
+    position: absolute;
+    border-radius: 50%;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    z-index: 1;
+    transition: .1s;
+}
 
  .C_box_main:hover {
      opacity: .8
