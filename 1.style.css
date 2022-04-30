@@ -219,7 +219,7 @@ code, pre {
      position: relative;
  }
 
-#post-body .C_box_main {
+#post-body  .K2_CBox .C_box_main {
      cursor: pointer;
      padding: 6px 8px 4px 8px;
      position: absolute;
