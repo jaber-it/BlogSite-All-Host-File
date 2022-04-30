@@ -10,7 +10,7 @@ const addCopyButtons = (clipboard) => {
         button.addEventListener("click", () => {
             clipboard.writeText(codeBlock.innerText).then(() => {
                 button.classList.add("copied");
-                document.getElementById("LefttNotif").innerHTML = "<span>Copied to Clipboard!<\/span>";
+                document.getElementById("LefttNotif").innerHTML = "<span>Copied to Clipboard!</span>";
                 setTimeout(() => {
                     button.classList.remove("copied")
                 }, 3e3);
