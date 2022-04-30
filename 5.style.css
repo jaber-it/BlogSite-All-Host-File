@@ -263,15 +263,6 @@ code, pre {
      background-size: cover;
      background-repeat: no-repeat;
      background-position: center;
-     cursor: pointer;
-    padding: 6px 8px 4px 8px;
-    position: absolute;
-    border-radius: 50%;
-    background: #004cbd;
-    transition: all .3s ease;
-    -webkit-transition: all .3s ease;
-    z-index: 1;
-    transition: .1s;
  }
 
 
