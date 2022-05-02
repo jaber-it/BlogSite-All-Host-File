@@ -1,3 +1,63 @@
+/*-- Collapsible Section Style CSS Code  --*/
+details {
+  user-select: none;
+  margin: 1.2rem 0;
+}
+details .collapsible-content .content-inner {
+    background: rgba(0, 105, 255, .2);
+    border-bottom: 1px solid rgba(0, 105, 255, .45);
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    padding: 0.5rem 1rem;
+    font-family: Inter,sans-serif;
+    font-size: 16px;
+    color: black;
+    line-height: 1.5;
+}
+details>summary span.icon {
+  transition: all 0.3s;
+  transform: rotate(450deg);
+}
+details[open] summary span.icon {
+  transform: rotate(540deg);
+}
+summary {
+  display: flex;
+    font-weight: bold;
+    font-family: Inter,sans-serif;
+    font-size: 18px;
+/*    text-transform: uppercase;    */
+    text-align: center;
+    padding: 8px;
+    color: #fff;
+    background: #ab1010;
+    cursor: pointer;
+    border-radius: 7px;
+    transition: all 0.25s ease-out;
+    align-items: center;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+.icon_border {
+    padding: 4px 6px 5px 6px;
+  /*  position: absolute;   */
+    outline: 0;
+    border-radius: 50%;
+    background: #2ab29b;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.icon {
+    flex-shrink: 0;
+    display: inline-block;
+
+    background-position: center;
+}
+
+
+
+/* -- Pre Code Line Number Style CSS Code  --*/
 code .str,
 pre .str {
     color: #65B042
