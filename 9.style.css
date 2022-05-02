@@ -194,9 +194,9 @@ code, pre {
 
 
  pre.prettyprint {
-  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif, "JetBrains Mono", sans-serif;
   font-size: 15px;
-     background-color: #13052e;
+     background-color: rgb(8, 27, 75);
      width: auto;
      width: 650px !ie7;
      margin: 0.5em auto;
