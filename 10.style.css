@@ -1,4 +1,16 @@
 /*-- Collapsible Section Style CSS Code  --*/
+
+dlbtn {
+    background-color: #0167af;
+    border: none;
+    color: #fff;
+    padding: 4px 10px;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 48%);
+    margin-top: 4px;
+}
+
 details {
 user-select: none;
 margin: 1.1rem 0;
