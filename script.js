@@ -49,7 +49,7 @@ if (navigator && navigator.clipboard) {
     }
 })();
 
-
+/*
 function disableselect(e) {
 	return false
 }
@@ -64,4 +64,4 @@ if (window.sidebar) {
 	document.onmousedown = disableselect
 	document.onclick = reEnable
 }
-
+*/
