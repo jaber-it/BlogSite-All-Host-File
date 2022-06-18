@@ -50,7 +50,10 @@ if (navigator && navigator.clipboard) {
 })();
 
 
-/*  Internet Check JS Code Stert  */
+/*  
+Internet Check JS Code Stert 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/offline-js/0.7.19/offline.min.js"></script>
+*/
 
 	(function() {
     var a, b, c, d, e, f, g;
