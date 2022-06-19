@@ -50,10 +50,6 @@ if (navigator && navigator.clipboard) {
 })();
 
 
-<script>
-Offline.options = {checks: {xhr: {url: '#APP_IMAGES#check-internet-connection-javascript.gif'}}};
-</script>
-
 /*  
 Internet Check JS Code Stert 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/offline-js/0.7.19/offline.min.js"></script>
