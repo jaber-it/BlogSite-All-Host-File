@@ -686,9 +686,9 @@ details[open] summary span.icon {
 summary {
     display: flex;
     //  height: 36px;
-    padding: 4px;
+    padding: 7px;
     font-family: Inter, sans-serif;
-    // color: #fff;
+    color: black;
     background: #dde1e7;
     cursor: pointer;
     border-radius: 7px;
@@ -702,8 +702,8 @@ summary::-webkit-details-marker {
 }
 
 .icon_border {
-    padding: 4px 10px 4px 11px;
-    //  position: absolute;  
+    padding: 4px 9px 4px 10px
+    //  position: absolute;
     outline: 0;
     border-radius: 50%;
     background: #ffffff; 
