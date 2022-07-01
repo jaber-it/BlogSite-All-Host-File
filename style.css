@@ -706,7 +706,7 @@ summary::-webkit-details-marker {
     //  position: absolute;  
     outline: 0;
     border-radius: 50%;
-    background: #2ab29b;
+    background: rgb(215 69 69);
     margin-right: 15px;
     margin-left: 15px;
 }
