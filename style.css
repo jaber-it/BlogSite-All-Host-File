@@ -646,7 +646,7 @@
 
 /*  ======================== Collapsible Section Style CSS Code   ======================== */
 
-dlbtn {
+.dlbtn {
     background-color: #0167af;
     border: none;
     color: #fff;
