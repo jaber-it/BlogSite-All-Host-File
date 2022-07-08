@@ -644,8 +644,8 @@
 
 /*  ========================  Internet Check Css Code End  ======================== */
 
-/*  ======================== Collapsible Section Style CSS Code   ======================== */
 
+/*  ======================== Downlode Button Style CSS Code   ======================== */
 .dlbtn {
     background-color: #0167af;
     border: solid 3px #dd5f5f;
@@ -658,65 +658,67 @@
     font-weight: 600;
 }
 
+
+/*  ======================== Collapsible Section Style CSS Code   ======================== */
 details {
-    user-select: none;
-    margin: 1.1rem 0;
+	user-select: none;
+	margin: 1.1rem 0;
 }
 
 details .collapsible-content .content-inner {
-    background: rgb(244 244 244);
-    border-bottom: 1px solid rgba(0, 105, 255, .45);
-    border-bottom-left-radius: 7px;
-    border-bottom-right-radius: 7px;
-    padding: 14px 5px 5px 30px; 
-    font-family: Inter, Bangla, sans-serif;
-    font-size: 18px;
-    line-height: 1.5;
-    box-shadow: inset 2px -4px 3px 1px #cebdba, inset -4px -5px 5px #ffffff73;  
+	background: rgb(244 244 244);
+	border-bottom: 1px solid rgba(0, 105, 255, .45);
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+	padding: 0.5rem 1rem;
+	font-family: Inter, sans-serif;
+	font-size: 16px;
+	color: black;
+	line-height: 1.5;
 }
 
 details>summary span.icon {
-    transition: all 0.3s;
-    transform: rotate(450deg);
+	transition: all 0.3s;
+	transform: rotate(450deg);
 }
 
 details[open] summary span.icon {
-    transform: rotate(540deg);
+	transform: rotate(540deg);
+}
+
+details[open] summary { 
+    background-color: #008b8b;
 }
 
 summary {
-    display: flex;
-    //  height: 36px;
-    padding: 7px;
-    font-family: Inter, sans-serif;
-    color: black;
-    background: #dde1e7;
-    cursor: pointer;
-    border-radius: 7px;
-    transition: all 0.25s ease-out;
-    align-items: center;
-    box-shadow: inset 2px 2px 1px #ffffff, inset 5px -2px 4px #7c7d7f;
+	display: flex;
+	padding: 4px;
+	font-family: Inter, sans-serif;
+	color: #fff;
+	background: #0b8d5d;
+	cursor: pointer;
+	border-radius: 7px;
+	transition: all 0.25s ease-out;
+	align-items: center;
 }
 
 summary::-webkit-details-marker {
-    display: none;
+	display: none;
 }
 
 .icon_border {
-    padding: 4px 9px 4px 10px
-    //  position: absolute;
-    outline: 0;
-    border-radius: 50%;
-    background: #ffffff; 
-    margin-right: 15px;
-    margin-left: 15px;
-    box-shadow: inset 0px 0px 2px 1px #d74444, inset -4px -5px 5px #ffffff73; 
+	padding: 5px 9px 5px 9px;
+	outline: 0;
+	border-radius: 50%;
+	background: #0f0f0f;
+	margin-right: 15px;
+	margin-left: 15px;
 }
 
 .icon {
-    flex-shrink: 0;
-    display: inline-block;
-    background-position: center;
+	flex-shrink: 0;
+	display: inline-block;
+	background-position: center;
 }
 
 
