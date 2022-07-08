@@ -666,16 +666,16 @@ details {
 }
 
 details .collapsible-content .content-inner {
-	background: rgb(244 244 244);
-	border-bottom: 1px solid rgba(0, 105, 255, .45);
-	border-bottom-left-radius: 7px;
-	border-bottom-right-radius: 7px;
-	padding: 0.5rem 1rem;
-	font-family: Inter, sans-serif;
-	font-size: 16px;
-	color: black;
-	line-height: 1.5;
-}
+	     background: rgb(244 244 244);       /* Chang */
+	      border-bottom: 1px solid rgba(0, 105, 255, .45);
+	      border-bottom-left-radius: 7px;
+	      border-bottom-right-radius: 7px;
+	      padding: 14px 5px 20px 30px;          /* Chang */
+	      font-family: Inter, Bangla, sans-serif;  /* Chang */
+	      font-size: 18px;         /* Chang */
+	      line-height: 1.5;
+	      box-shadow: inset 2px -4px 3px 1px #cebdba, inset -4px -5px 5px #ffffff73;        /* Chang */
+	   }
 
 details>summary span.icon {
 	transition: all 0.3s;
@@ -705,21 +705,22 @@ summary {
 summary::-webkit-details-marker {
 	display: none;
 }
-
 .icon_border {
-	padding: 5px 9px 5px 9px;
-	outline: 0;
-	border-radius: 50%;
-	background: #0f0f0f;
-	margin-right: 15px;
-	margin-left: 15px;
-}
+	      padding: 4px 9px 4px 10px;
+	      outline: 0;
+	      border-radius: 50%;
+	      margin-right: 15px;
+	      margin-left: 15px;
+	      background: #ffffff;          /* Chang */
+	      box-shadow: inset 0px 0px 2px 1px #d74444, inset -4px -5px 5px #ffffff73;         /* Chang */
+	   }
 
 .icon {
-	flex-shrink: 0;
-	display: inline-block;
-	background-position: center;
-}
+	      flex-shrink: 0;
+	      display: inline-block;
+	      background-position: center;
+          color: black;
+	   }
 
 
 
