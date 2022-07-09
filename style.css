@@ -657,7 +657,9 @@
     font-family: sans-serif;
     font-weight: 600;
 }
-
+.fa, .fas {
+    margin-right: 7px;
+}
 
 /*  ======================== Collapsible Section Style CSS Code   ======================== */
 details {
