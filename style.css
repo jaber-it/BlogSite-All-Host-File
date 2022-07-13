@@ -729,13 +729,9 @@ summary::-webkit-details-marker {
 /* -- highlighting effect Style CSS Code mark Teg --*/
 
 mark {
-  border-radius: 1em 0 1em 0;
-  background-image: linear-gradient(
-    -100deg,
-    rgba(255, 20, 0, 0.2),
-    rgba(255, 20, 0, 0.7) 95%,
-    rgba(255, 20, 0, 0.1)
-  );
+  padding: 3px 6px;
+  border-radius: 6px;
+  background-image: linear-gradient(to right, #ffcfafed, #ffdbe0d1, #ffb2fdcc);
 }
 
 a {
@@ -750,6 +746,7 @@ a:hover {
 a:hover ~ hr {
   width: 100%;
 }
+
 /* -- highlighting effect Style CSS Code mark Teg --*/
 
 /* -- Pre Code Line Number Style CSS Code  --*/
