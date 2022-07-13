@@ -727,25 +727,28 @@ summary::-webkit-details-marker {
 
 
 /* -- highlighting effect Style CSS Code mark Teg --*/
+
 mark {
-  -webkit-animation: 1.5s highlight 1.5s 1 normal forwards;
-          animation: 1.5s highlight 1.5s 1 normal forwards;
-  background-color: none;
-  background: linear-gradient(90deg, #7efff5 50%, rgba(255, 255, 255, 0) 50%);
-  background-size: 200% 100%;
-  background-position: 100% 0;
+  border-radius: 1em 0 1em 0;
+  background-image: linear-gradient(
+    -100deg,
+    rgba(255, 20, 0, 0.2),
+    rgba(255, 20, 0, 0.7) 95%,
+    rgba(255, 20, 0, 0.1)
+  );
 }
 
-@-webkit-keyframes highlight {
-  to {
-    background-position: 0 0;
-  }
+a {
+  text-decoration: none;
+  transition: all 200ms ease-out;
 }
 
-@keyframes highlight {
-  to {
-    background-position: 0 0;
-  }
+a:hover {
+  font-size: 1.4rem;
+}
+
+a:hover ~ hr {
+  width: 100%;
 }
 /* -- highlighting effect Style CSS Code mark Teg --*/
 
