@@ -740,7 +740,7 @@ a {
 }
 
 a:hover {
-  font-size: 18px;
+  font-size: 1.1em;
 }
 
 a:hover ~ hr {
