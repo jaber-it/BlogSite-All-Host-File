@@ -330,21 +330,27 @@ if (window.sidebar) {
 	document.onmousedown = disableselect
 	document.onclick = reEnable
 }
+
+
+Page Atou Refress And Courent position get......................
+
+  <script>
+        document.addEventListener(&quot;DOMContentLoaded&quot;, function(event) { 
+            var scrollpos = localStorage.getItem(&#39;scrollpos&#39;);
+            if (scrollpos) window.scrollTo(0, scrollpos);
+        });
+
+        window.onbeforeunload = function(e) {
+            localStorage.setItem(&#39;scrollpos&#39;, window.scrollY);
+        };
+    </script>
+
+<script language='javascript'>
+setTimeout(function(){
+   window.location.reload(1);
+}, 60000);
+</script>
 */
 
 
 
-document.addEventListener(&quot;DOMContentLoaded&quot;, function(event) { 
-	var scrollpos = localStorage.getItem(&#39;scrollpos&#39;);
-	if (scrollpos) window.scrollTo(0, scrollpos);
-       	 });
-
-	window.onbeforeunload = function(e) {
-            localStorage.setItem(&#39;scrollpos&#39;, window.scrollY);
-        };
-
-
-
-setTimeout(function(){
-   window.location.reload(1);
-}, 60000);
