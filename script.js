@@ -331,3 +331,20 @@ if (window.sidebar) {
 	document.onclick = reEnable
 }
 */
+
+
+
+document.addEventListener(&quot;DOMContentLoaded&quot;, function(event) { 
+	var scrollpos = localStorage.getItem(&#39;scrollpos&#39;);
+	if (scrollpos) window.scrollTo(0, scrollpos);
+       	 });
+
+	window.onbeforeunload = function(e) {
+            localStorage.setItem(&#39;scrollpos&#39;, window.scrollY);
+        };
+
+
+
+setTimeout(function(){
+   window.location.reload(1);
+}, 60000);
