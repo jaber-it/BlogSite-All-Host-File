@@ -199,6 +199,10 @@ form .input-field span.details {
     transform: scale(1.00);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+.litext {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: start;
+}
 
 .img-wrapper {
     position: relative;
@@ -400,15 +404,9 @@ h2 {
     display: none;
     padding: 5px 1px;
     margin: 0;
- //   font-size: 14px;
- //   color: #212529;
     text-align: left;
     list-style: none;
- //   background-color: aquamarine;
- //   background-clip: padding-box;
-  //  border: 1px solid rgb(255 58 58);
     border-radius: 0.25rem;
-    
 }
 
 .btn-check:focus+.btn,
