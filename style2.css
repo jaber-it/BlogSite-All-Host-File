@@ -738,14 +738,6 @@ a {
   transition: all 200ms ease-out;
 }
 
-a:hover {
-  font-size: 18px;
-}
-
-a:hover ~ hr {
-  width: 100%;
-}
-
 /* -- highlighting effect Style CSS Code mark Teg --*/
 
 /* -- Pre Code Line Number Style CSS Code  --*/
