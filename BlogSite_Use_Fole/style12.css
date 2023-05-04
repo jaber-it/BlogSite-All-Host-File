@@ -298,7 +298,8 @@ form .input-field span.details {
 }
 
 .mybutton5:hover {
-    background-color: #ff0000
+    background-color: #ff0000;
+     border-radius: 30px;
 }
 
 .mybutton6 {
@@ -318,6 +319,7 @@ form .input-field span.details {
 
 .mybutton6:hover {
     background-color: #a10000;
+     border-radius: 30px;
 }
 .mycenter2 {
     width: 100%;
