@@ -38,8 +38,6 @@ function checkJWT() {
     userInfoContainer.style.display = 'none';
     fullbodydiv2.style.display = 'block';
     fullbodydiv.style.display = 'none';
-    fullbodydiv4.style.display = 'block';
-    fullbodydiv3.style.display = 'none';
   } else {
     loadUser(jwt);
     loginLogoutButton.style.display = 'none';
@@ -47,8 +45,6 @@ function checkJWT() {
     userInfoContainer.style.display = 'flex';
     fullbodydiv.style.display = 'block';
     fullbodydiv2.style.display = 'none';
-    fullbodydiv3.style.display = 'block';
-    fullbodydiv4.style.display = 'none';
   }
 };
 
