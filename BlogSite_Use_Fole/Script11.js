@@ -27,8 +27,6 @@ function displayImage() {
 // Add an event listener to the image URL input box
 imageUrlInput.addEventListener('input', displayImage);
 
-checkJWT();
-showhide();
 
 function checkJWT() {
     const fullbodydiv = document.querySelector('.fullbody');
@@ -49,6 +47,19 @@ function checkJWT() {
     userInfoContainer.style.display = 'flex';
     fullbodydiv.style.display = 'block';
     fullbodydiv2.style.display = 'none';
+    fullbodydiv3.style.display = 'block';
+    fullbodydiv4.style.display = 'none';
+  }
+};
+
+
+function slidbarbutton() {
+    const fullbodydiv3 = document.querySelector('.fullbody3');
+    const fullbodydiv4 = document.querySelector('.fullbody4');
+  if (jwt === null) {
+    fullbodydiv4.style.display = 'block';
+    fullbodydiv3.style.display = 'none';
+  } else {
     fullbodydiv3.style.display = 'block';
     fullbodydiv4.style.display = 'none';
   }
