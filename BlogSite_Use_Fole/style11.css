@@ -319,12 +319,14 @@ form .input-field span.details {
 .mybutton6:hover {
     background-color: #a10000;
 }
-
-
-.mybutton7 {
-    width: 50%;
+.mycenter2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    height: 48px;
+}
+.mybutton7 {
+    height: 45px;
     background-color: #333;
     color: #fff;
     border: none;
@@ -334,8 +336,8 @@ form .input-field span.details {
     font-weight: 700;
     cursor: pointer;
     transition: all 0.3s ease;
-    display: flex;
   align-items: center;
+  width: -webkit-fill-available;
   }
   
   .mybutton7:hover {
@@ -346,9 +348,10 @@ form .input-field span.details {
 
   
 #avatar4 {
-    height: -webkit-fill-available;
+    height: 40px;
     border-radius: 50%;
-    margin-right: 18px;
+    margin-right: 14px;
+    margin-left: 10px;
     border: 1px solid rgb(255, 255, 255);
     display: block;
     transition: all 0.3s ease-in-out;
