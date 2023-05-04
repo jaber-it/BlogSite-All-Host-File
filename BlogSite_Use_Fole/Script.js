@@ -385,7 +385,6 @@ function insert_api_Data() {
 };
 //loadUser(sessionStorage.getItem("jwt"));
 function loadUser(jwt) {
-    showLoading();
     const xhttp = new XMLHttpRequest();
     xhttp.open("GET", "https://apex.oracle.com/pls/apex/my_stock/BLOG_SITE_USERS/UserInfo/" + jwt);
     xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
@@ -406,7 +405,6 @@ function loadUser(jwt) {
                 document.getElementById("user_type").innerHTML = user.user_type;
             }
         }
-        hideLoading();
     };
 }
 function showLoading() {
