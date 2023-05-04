@@ -726,27 +726,6 @@ summary::-webkit-details-marker {
 
 
 /* -- highlighting effect Style CSS Code mark Teg --*/
-a {
-  text-decoration: none;
-  transition: all 200ms ease-out;
-}
-
-a:hover {
-  font-weight: 900;
-  animation: shake 0.3s ease;
-}
-
-@keyframes shake {
-  0% { transform: translateX(0); }
-  25% { transform: translateX(-10px); }
-  50% { transform: translateX(10px); }
-  75% { transform: translateX(-10px); }
-  100% { transform: translateX(0); }
-}
-
-a:hover ~ hr {
-  width: 100%;
-}
 
 mark {
   padding: 3px 6px;
