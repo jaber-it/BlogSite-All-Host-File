@@ -1,25 +1,25 @@
+
 /*
 Underline to a link from left to right when the user hovers 
 Add Class= mylink
 */
 .mylink {
-    position: relative;
-    text-decoration: none;
-    color: #333;
-  }
-  
-  .mylink:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    height: 2px;
-    background-color: #333;
-    transition: width 0.3s ease;
-  }
-  
-  .mylink:hover:after {
-    width: 100%;
-  }
-  
+  position: relative;
+  text-decoration: none;
+  color: #333;
+}
+
+.mylink:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #333;
+  transition: width 0.3s ease;
+}
+
+.mylink:hover:after {
+  width: 100%;
+}
