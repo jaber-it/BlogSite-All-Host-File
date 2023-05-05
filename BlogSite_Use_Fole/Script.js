@@ -28,11 +28,13 @@ function displayImage() {
 imageUrlInput.addEventListener('input', displayImage);
 
 
+	slidbarbutton();
+	checkJWT();
+	showhide();   
+
 function checkJWT() {
     const fullbodydiv = document.querySelector('.fullbody');
     const fullbodydiv2 = document.querySelector('.fullbody2');
-    const fullbodydiv3 = document.querySelector('.fullbody3');
-    const fullbodydiv4 = document.querySelector('.fullbody4');
   if (jwt === null) {
     loginLogoutButton.innerText = 'Login';
     userInfoContainer.style.display = 'none';
