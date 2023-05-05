@@ -41,7 +41,6 @@ function checkJWT() {
     fullbodydiv.style.display = 'none';
   } else {
     loadUser(jwt);
-    loadUser2(jwt);
     loginLogoutButton.style.display = 'none';
     loginLogoutButton.innerText = 'Logout';
     userInfoContainer.style.display = 'flex';
