@@ -41,6 +41,7 @@ function checkJWT() {
     fullbodydiv.style.display = 'none';
   } else {
     loadUser(jwt);
+    loadUser2(jwt);
     loginLogoutButton.style.display = 'none';
     loginLogoutButton.innerText = 'Logout';
     userInfoContainer.style.display = 'flex';
@@ -412,6 +413,30 @@ function loadUser(jwt) {
                 const user = response.items[0];
                 document.getElementById("avatar2").src = user.pp_url;
                 document.getElementById("avatar4").src = user.pp_url;
+                document.getElementById("fname2").innerHTML = user.full_name;
+                document.getElementById("avatar3").src = user.pp_url;
+                document.getElementById("full_name").innerHTML = user.full_name;
+                document.getElementById("phone_number").innerHTML = user.phone_number;
+                document.getElementById("email_address").innerHTML = user.email_address;
+                document.getElementById("user_type").innerHTML = user.user_type;
+            }
+        }
+    };
+}
+
+function loadUser2(jwt) {
+    const xhttp = new XMLHttpRequest();
+    xhttp.open("GET", "https://apex.oracle.com/pls/apex/my_stock/BLOG_SITE_USERS/UserInfo/" + jwt);
+    xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+    xhttp.setRequestHeader("Authorization", jwt);
+    xhttp.send();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+            const response = JSON.parse(this.responseText);
+            console.log(response);
+            if (response.items.length > 0) {
+                const user = response.items[0];
+                document.getElementById("avatar2").src = user.pp_url;
                 document.getElementById("fname2").innerHTML = user.full_name;
                 document.getElementById("avatar3").src = user.pp_url;
                 document.getElementById("full_name").innerHTML = user.full_name;
