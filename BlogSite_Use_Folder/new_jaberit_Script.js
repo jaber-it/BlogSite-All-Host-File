@@ -27,21 +27,18 @@ function displayImage() {
 // Add an event listener to the image URL input box
 imageUrlInput.addEventListener('input', displayImage);
 
+slidbarbutton();
 checkJWT();
-showhide();
+showhide();   
 
 function checkJWT() {
     const fullbodydiv = document.querySelector('.fullbody');
     const fullbodydiv2 = document.querySelector('.fullbody2');
-    const fullbodydiv3 = document.querySelector('.fullbody3');
-    const fullbodydiv4 = document.querySelector('.fullbody4');
   if (jwt === null) {
     loginLogoutButton.innerText = 'Login';
     userInfoContainer.style.display = 'none';
     fullbodydiv2.style.display = 'block';
     fullbodydiv.style.display = 'none';
-    fullbodydiv4.style.display = 'block';
-    fullbodydiv3.style.display = 'none';
   } else {
     loadUser(jwt);
     loginLogoutButton.style.display = 'none';
@@ -49,6 +46,17 @@ function checkJWT() {
     userInfoContainer.style.display = 'flex';
     fullbodydiv.style.display = 'block';
     fullbodydiv2.style.display = 'none';
+  }
+};
+
+
+function slidbarbutton() {
+    const fullbodydiv3 = document.querySelector('.fullbody3');
+    const fullbodydiv4 = document.querySelector('.fullbody4');
+  if (jwt === null) {
+    fullbodydiv4.style.display = 'block';
+    fullbodydiv3.style.display = 'none';
+  } else {
     fullbodydiv3.style.display = 'block';
     fullbodydiv4.style.display = 'none';
   }
@@ -391,7 +399,6 @@ function insert_api_Data() {
 };
 //loadUser(sessionStorage.getItem("jwt"));
 function loadUser(jwt) {
-    showLoading();
     const xhttp = new XMLHttpRequest();
     xhttp.open("GET", "https://apex.oracle.com/pls/apex/blogpost/NEW/BLOG_SITE_USERS/UserInfo/" + jwt);
     xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
@@ -403,19 +410,19 @@ function loadUser(jwt) {
             console.log(response);
             if (response.items.length > 0) {
                 const user = response.items[0];
-                document.getElementById("avatar2").src = user.pp_url;
-                 document.getElementById("fname2").innerHTML = user.full_name;
-                document.getElementById("avatar3").src = user.pp_url;
+               document.getElementById("avatar2").src = user.pp_url;
                 document.getElementById("avatar4").src = user.pp_url;
+                document.getElementById("fname2").innerHTML = user.full_name;
+                document.getElementById("avatar3").src = user.pp_url;
                 document.getElementById("full_name").innerHTML = user.full_name;
                 document.getElementById("phone_number").innerHTML = user.phone_number;
                 document.getElementById("email_address").innerHTML = user.email_address;
                 document.getElementById("user_type").innerHTML = user.user_type;
             }
         }
-        hideLoading();
     };
 }
+
 function showLoading() {
     document.getElementById("loading-overlay").style.display = "block";
     setTimeout(function() {
