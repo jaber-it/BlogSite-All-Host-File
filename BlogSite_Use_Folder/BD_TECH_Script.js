@@ -120,7 +120,7 @@ function checkUser() {
         }
     });
     const xhttp = new XMLHttpRequest();
-    xhttp.open("GET", "https://apex.oracle.com/pls/apex/my_stock/BLOG_SITE_USERS/view");
+    xhttp.open("GET", "https://apex.oracle.com/pls/apex/blogpost/NEW/BLOG_SITE_USERS/view");
     xhttp.onreadystatechange = function() {
         if (xhttp.readyState == 4) {
             if (xhttp.status == 200) {
@@ -176,7 +176,7 @@ function login(username, password) {
         }
     });
     const xhr2 = new XMLHttpRequest();
-    xhr2.open("POST", "https://apex.oracle.com/pls/apex/my_stock/BLOG_SITE_USERS/login");
+    xhr2.open("POST", "https://apex.oracle.com/pls/apex/blogpost/NEW/BLOG_SITE_USERS/login");
     xhr2.setRequestHeader("Content-Type", "application/json");
     xhr2.onreadystatechange = function() {
         if (xhr2.readyState == 4) {
@@ -304,7 +304,7 @@ function insert_api_Data() {
     var signupForm = document.getElementById("signupForm");
     // Check if username, email, and phone number already exist
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", "https://apex.oracle.com/pls/apex/my_stock/BLOG_SITE_USERS/view", true);
+    xhr.open("GET", "https://apex.oracle.com/pls/apex/blogpost/NEW/BLOG_SITE_USERS/view", true);
     xhr.onreadystatechange = function() {
         if (xhr.readyState === 4) {
             if (xhr.status === 200) {
@@ -357,7 +357,7 @@ function insert_api_Data() {
                         GENDER: genderInput.value
                     };
                     var xhr2 = new XMLHttpRequest();
-                    xhr2.open("POST", "https://apex.oracle.com/pls/apex/my_stock/BLOG_SITE_USERS/insert", true);
+                    xhr2.open("POST", "https://apex.oracle.com/pls/apex/blogpost/NEW/BLOG_SITE_USERS/insert", true);
                     xhr2.setRequestHeader('Content-Type', 'application/json');
                     xhr2.onreadystatechange = function() {
                         if (xhr2.readyState === 4) {
@@ -397,7 +397,7 @@ function insert_api_Data() {
 //loadUser(sessionStorage.getItem("jwt"));
 function loadUser(jwt) {
     const xhttp = new XMLHttpRequest();
-    xhttp.open("GET", "https://apex.oracle.com/pls/apex/my_stock/BLOG_SITE_USERS/UserInfo/" + jwt);
+    xhttp.open("GET", "https://apex.oracle.com/pls/apex/blogpost/NEW/BLOG_SITE_USERS/UserInfo/" + jwt);
     xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
     xhttp.setRequestHeader("Authorization", jwt);
     xhttp.send();
