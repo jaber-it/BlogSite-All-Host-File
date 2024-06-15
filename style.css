@@ -660,70 +660,77 @@
 }
 
 /*  ======================== Collapsible Section Style CSS Code   ======================== */
-details {
-	user-select: none;
-	margin: 1.1rem 0;
-}
+ details {
+            margin: auto;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgb(0 0 0 / 45%);
+            background-color: #fff;
+        }
 
-details .collapsible-content .content-inner {
-	     background: rgb(244 244 244);       /* Chang */
-	      border-bottom: 1px solid rgba(0, 105, 255, .45);
-	      border-bottom-left-radius: 7px;
-	      border-bottom-right-radius: 7px;
-	      padding: 14px 5px 20px 30px;          /* Chang */
-	      font-family: Inter, Bangla, sans-serif;  /* Chang */
-	      font-size: 18px;         /* Chang */
-	      line-height: 1.5;
-	      box-shadow: inset 2px -4px 3px 1px #cebdba, inset -4px -5px 5px #ffffff73;        /* Chang */
-	   }
+        summary {
+            background-color: #102a3c;
+            color: white;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            text-align: left;
+            width: 100%;
+            cursor: pointer;
+            outline: none;
+            transition: background-color 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
 
-details>summary span.icon {
-	transition: all 0.3s;
-	transform: rotate(450deg);
-}
+        summary::-webkit-details-marker {
+            color: #00ACF3;
+            font-size: 125%;
+            margin-right: 2px;
+        }
 
-details[open] summary span.icon {
-	transform: rotate(540deg);
-}
+        summary:hover {
+            background-color: #2c5266;
+        }
 
-details[open] summary { 
-    background-color: #008b8b;
-}
+        .arrow {
+            margin-right: 10px;
+            transition: transform 0.3s ease;
+        }
 
-summary {
-	display: flex;
-	padding: 4px;
-	font-family: Inter, sans-serif;
-	color: #fff;
-	background: #0b8d5d;
-	cursor: pointer;
-	border-radius: 7px;
-	transition: all 0.25s ease-out;
-	align-items: center;
-}
+        .collapsible-body {
+            max-height: 0;
+            overflow: hidden;
+            padding: 0 15px;
+            background-color: #e0e0e0;
+            /* Sedo (grayish) background color */
+            transition: max-height 0.9s ease, padding 0.9s ease;
+            /* Slower transition */
+        }
 
-summary::-webkit-details-marker {
-	display: none;
-}
-.icon_border {
-	      padding: 4px 9px 4px 10px;
-	      outline: 0;
-	      border-radius: 50%;
-	      margin-right: 15px;
-	      margin-left: 15px;
-	      background: #ffffff;          /* Chang */
-	      box-shadow: inset 0px 0px 2px 1px #d74444, inset -4px -5px 5px #ffffff73;         /* Chang */
-	   }
+        details[open] .collapsible-body {
+            max-height: 200px;
+            /* Adjust based on content height */
+        }
 
-.icon {
-	      flex-shrink: 0;
-	      display: inline-block;
-	      background-position: center;
-          color: black;
-	   }
+        .collapsible-body p {
+            margin: 15px 0;
+        }
 
+        summary:focus {
+            outline: none;
+            /* Remove focus outline */
+        }
 
+        details[open] summary {
+            background-color: #1c4e71;
+        }
 
+        /* Rotate arrow when details are open */
+        details[open] summary .arrow {
+            transform: rotate(90deg);
+        }
 /* -- highlighting effect Style CSS Code mark Teg --*/
 
 mark {
