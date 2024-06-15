@@ -697,6 +697,9 @@
         .arrow {
             margin-right: 10px;
             transition: transform 0.3s ease;
+	   font-size: 20px;
+            color: #2bff00;
+            font-weight: bolder;
         }
 
         .collapsible-body {
