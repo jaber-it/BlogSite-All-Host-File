@@ -661,7 +661,6 @@
 /*  ======================== Collapsible Section Style CSS Code   ======================== */
  details {
 	 margin-bottom: 7px;
-            margin: auto;
             border: 1px solid #ccc;
             border-radius: 20px 0px 18px 0px;
             overflow: hidden;
