@@ -661,12 +661,14 @@
 /*  ======================== Collapsible Section Style CSS Code   ======================== */
  details {
 	 margin-bottom: 7px;
-            border: 1px solid #ccc;
-            border-radius: 20px 0px 18px 0px;
-            overflow: hidden;
-            box-shadow: 0 4px 6px rgb(0 0 0 / 45%);
-            background-color: #fff;
-        }
+        border: 1px solid #ccc;
+        border-radius: 20px 0px 18px 0px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgb(0 0 0 / 45%);
+        background-color: #fff;
+	 text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+ }
 
         summary {
             background-color: #102a3c;
@@ -706,9 +708,8 @@
             overflow: hidden;
             padding: 0 15px;
             background-color: #e0e0e0;
-            /* Sedo (grayish) background color */
-            transition: max-height 0.9s ease, padding 0.9s ease;
-            /* Slower transition */
+             /* Sedo (grayish) background color */
+            transition: max-height 1s ease, padding 1s ease;
         }
 
         details[open] .collapsible-body {
