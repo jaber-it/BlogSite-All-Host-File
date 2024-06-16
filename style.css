@@ -713,7 +713,7 @@
         }
 
         details[open] .collapsible-body {
-            max-height: 200px;
+            max-height: 100%;
             /* Adjust based on content height */
         }
 
